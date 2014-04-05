@@ -53,7 +53,7 @@ exports.init = function ( grunt ){
           return grunt.warn('Exited with error code ' + code);
         }
 
-        grunt.log.writeln('\nFile ' + chalk.cyan(src) + ' lint-free.');
+        grunt.log.writeln('File ' + chalk.cyan(src) + ' lint-free.');
         next();
       });
     }, done);
