@@ -55,13 +55,13 @@ Allows you to specify a glob pattern of files that should not be linted .
 
 Type. `String|Array`
 
-Specify which linters you **don't** want to run. A list can linters can be found [here](https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md)
+Specify which linters you **don't** want to run. A list of linters can be found [here](https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md)
 
 #### excludeLinter
 
 Type. `String|Array`
 
-Specify which linters you **want** to run. A list can linters can be found [here](https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md)
+Specify which linters you **want** to run. A list of linters can be found [here](https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md)
 
 
 ### Usage Examples
