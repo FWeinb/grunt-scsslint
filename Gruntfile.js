@@ -1,5 +1,5 @@
 /*
- * grunt-scss-lint
+ * grunt-scsslint
  *
  *
  * Copyright (c) 2014 Fabrice Weinberg
