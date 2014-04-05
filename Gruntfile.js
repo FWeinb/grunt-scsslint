@@ -25,7 +25,7 @@ module.exports = function (grunt) {
     },
     scsslint: {
       defaultOptions: {
-        src: ['./test/fixtures/default'],
+        src: ['../SassyJson/stylesheets/**/*'],
       }
     },
 

@@ -12,7 +12,11 @@ module.exports = function (grunt) {
   var scsslint = require('./lib/scsslint').init(grunt);
 
   grunt.registerMultiTask('scsslint', 'Linting your scss with scss-lint', function () {
-    scsslint.lint(this.filesSrc, this.options(), this.async());
+    var done = this.async();
+
+    scsslint.lint(this.filesSrc, this.options(), function(){
+      done();
+    });
   });
 
 };
