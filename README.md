@@ -63,6 +63,12 @@ Type. `String|Array`
 
 Specify which linters you **want** to run. A list of linters can be found [here](https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md)
 
+#### bundleExec
+
+Type: `Boolean`
+Default: `false`
+
+Run `scss-lint` with [bundle exec](http://gembundler.com/man/bundle-exec.1.html): `bundle exec scss-lint`.
 
 ### Usage Examples
 
@@ -86,7 +92,8 @@ grunt.registerTask('default', ['scsslint']);
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+  * 0.0.2 add `bundler` support
+  * 0.0.1 First Release
 
 ## License
 Copyright (c) 2014 Fabrice Weinberg. Licensed under the MIT license.

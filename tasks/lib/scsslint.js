@@ -21,7 +21,8 @@ exports.init = function ( grunt ){
       );
     }
 
-    var passedArgs = dargs(options, ['format', 'version', 'showLinters', 'help']);
+    var passedArgs = dargs(options, ['format', 'version', 'showLinters', 'help', 'bundleExec']);
+    var bundleExec = options.bundleExec;
 
     async.eachLimit(files, numCPUs, function(src, next){
 
@@ -33,6 +34,13 @@ exports.init = function ( grunt ){
       var args = [
         src
       ].concat(passedArgs);
+
+      var bin = 'scss-lint';
+
+      if (bundleExec) {
+        bin = 'bundle';
+        args.unshift('exec', bin);
+      }
 
       var cp = spawn('scss-lint', args, { stdio: 'inherit' });
 
