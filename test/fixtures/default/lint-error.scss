@@ -1,2 +1,7 @@
-test{
+@mixin _test{
+  color:green;
+};
+
+.test{
+  color:blue;
 }

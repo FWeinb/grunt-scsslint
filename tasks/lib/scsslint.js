@@ -10,6 +10,16 @@ var which = require('which');
 
 exports.init = function ( grunt ){
 
+  var reduceArray = function(options, value){
+    if ( !!options[value] ) {
+      if ( Array.isArray(options[value])){
+        return options[value].join(',');
+      } else  {
+        return options[value];
+      }
+    }
+  };
+
   exports.lint = function ( files, options, done ) {
 
     try {
@@ -21,8 +31,15 @@ exports.init = function ( grunt ){
       );
     }
 
+
+    options.excludeLinter = reduceArray(options, 'excludeLinter');
+    options.includeLinter = reduceArray(options, 'includeLinter');
+
     var passedArgs = dargs(options, ['format', 'version', 'showLinters', 'help', 'bundleExec']);
+
+
     var bundleExec = options.bundleExec;
+
 
     async.eachLimit(files, numCPUs, function(src, next){
 
@@ -35,6 +52,7 @@ exports.init = function ( grunt ){
         src
       ].concat(passedArgs);
 
+      console.log(args);
       var bin = 'scss-lint';
 
       if (bundleExec) {

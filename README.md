@@ -57,7 +57,7 @@ Type. `String|Array`
 
 Specify which linters you **don't** want to run. A list of linters can be found [here](https://github.com/causes/scss-lint/blob/master/lib/scss_lint/linter/README.md)
 
-#### excludeLinter
+#### includeLinter
 
 Type. `String|Array`
 
@@ -92,6 +92,8 @@ grunt.registerTask('default', ['scsslint']);
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+
+  * 0.0.4 fix but where includeLinter|excludeLinter where not working correctly
   * 0.0.3 remove unnecessary newline in gruntlog
   * 0.0.2 add `bundler` support
   * 0.0.1 First Release
