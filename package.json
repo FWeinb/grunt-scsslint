@@ -1,0 +1,44 @@
+{
+  "name": "grunt-scss-lint",
+  "version": "0.0.1",
+  "description": "Linting your scss with scss-lint",
+  "repository": "https://github.com/FWeinb/grunt-scss-lint",
+  "author": {
+    "name": "Fabrice Weinberg",
+    "email": "Fabrice@weinberg.me",
+    "url": "blog.weinberg.me"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "lint",
+    "gruntplugin"
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "devDependencies": {
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-nodeunit": "~0.3.0",
+    "grunt": "~0.4.2",
+    "jshint-stylish": "~0.1.5",
+    "load-grunt-tasks": "~0.3.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "chalk": "^0.4.0",
+    "which": "^1.0.5",
+    "async": "^0.6.2",
+    "win-spawn": "^2.0.0",
+    "dargs": "^0.1.0"
+  }
+}
