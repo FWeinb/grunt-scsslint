@@ -25,7 +25,7 @@ module.exports = function (grunt) {
     },
     scsslint: {
       defaultOptions: {
-        src: ['./test/**/*'],
+        src: ['./test/**/*.scss'],
       }
     },
 
@@ -35,12 +35,7 @@ module.exports = function (grunt) {
 
   });
 
-  // Actually load this plugin's task(s).
   grunt.loadTasks('tasks');
-
-  //TODO: Write tests...
-  grunt.registerTask('test', ['nodeunit']);
-
-  grunt.registerTask('default', ['jshint']);
+  grunt.registerTask('test', ['jshint','nodeunit']);
 
 };

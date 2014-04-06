@@ -1,5 +1,0 @@
-linters:
-  SpaceBeforeBrace:
-    enabled: true
-  ColorKeyword:
-    enabled: false
