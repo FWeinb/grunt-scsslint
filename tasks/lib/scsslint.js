@@ -55,7 +55,7 @@ exports.init = function ( grunt ){
 
     async.eachLimit(files, numCPUs, function(src, next){
 
-      if (!grunt.file.isFile(src)) { return; }
+      if (!grunt.file.isFile(src)) { next(); return; }
 
       if (!grunt.file.exists(src)) {
         grunt.log.warn('Source file "' + src + '" not found.');

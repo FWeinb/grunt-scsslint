@@ -93,6 +93,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+  * 0.0.8 Fixed bug introdruced in `0.0.7` where not all files where processed.
   * 0.0.7 ignore folders
   * 0.0.6 Added more tests
   * 0.0.5 Rewrote sass-lint handeling. Added simple tests.
