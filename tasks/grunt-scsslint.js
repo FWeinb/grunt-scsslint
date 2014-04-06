@@ -9,14 +9,19 @@
 'use strict';
 
 module.exports = function (grunt) {
-  var scsslint = require('./lib/scsslint').init(grunt);
+  var path = require('path');
+  var ScssLinter = require('scsslint');
+
+  var linter = new ScssLinter({
+    reporter : grunt
+  });
+
+  var toAbsolutePath  = function(src){
+    return path.resolve(src);
+  };
 
   grunt.registerMultiTask('scsslint', 'Linting your scss with scss-lint', function () {
-    var done = this.async();
-
-    scsslint.lint(this.filesSrc, this.options(), function(){
-      done();
-    });
+    linter.lint(this.filesSrc.map(toAbsolutePath), this.options(), this.async());
   });
 
 };
