@@ -1,4 +1,4 @@
-# grunt-scsslint
+# grunt-scsslint [![Build Status](https://travis-ci.org/FWeinb/grunt-scsslint.svg?branch=master)](https://travis-ci.org/FWeinb/grunt-scsslint)
 
 > Linting your scss with scsslint
 
