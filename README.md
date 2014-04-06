@@ -93,6 +93,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+  * 0.0.6 Added more tests
   * 0.0.5 Rewrote sass-lint handeling. Added simple tests.
   * 0.0.4 fix but where includeLinter|excludeLinter where not working correctly
   * 0.0.3 remove unnecessary newline in gruntlog

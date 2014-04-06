@@ -1,6 +1,6 @@
 {
   "name": "grunt-scsslint",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Linting your scss with scss-lint",
   "repository": "https://github.com/FWeinb/grunt-scsslint",
   "author": {
