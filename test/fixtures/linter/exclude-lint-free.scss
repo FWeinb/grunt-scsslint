@@ -1,0 +1,10 @@
+.test {
+
+  color:#000; // This error will not trigger (excluded SpaceAfterPropertyColon)
+
+  .test {
+
+    color: #00f;
+
+  }
+}

@@ -1,0 +1,10 @@
+.test{  // No error (SpaceBeforeBrace not included)
+
+  color:#000; // No error (SpaceAfterPropertyColon not included)
+
+  .test{
+
+    color: #00f;
+
+  }
+}

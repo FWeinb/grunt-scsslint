@@ -1,0 +1,9 @@
+.test {
+
+  .test{ // Error (SpaceBeforeBrace included)
+
+    color: green; // No error (ColorKeyword not included)
+
+  }
+
+}
